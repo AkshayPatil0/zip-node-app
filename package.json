@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "zipit": "./src/index.js"
+    "zip-node-app": "./src/index.js"
   },
   "dependencies": {
     "archiver": "^5.3.1",

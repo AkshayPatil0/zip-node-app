@@ -34,4 +34,9 @@ const archiveProject = (dirPath, outName, format) => {
   archive.finalize();
 };
 
-module.exports = { cleanNodeProject, archiveProject };
+const getDefaultProjectName = (projectPath, format) => {
+  const projectName = projectPath.split("/").at(-1);
+  return `${projectName}-archived.${format}`;
+};
+
+module.exports = { cleanNodeProject, archiveProject, getDefaultProjectName };
