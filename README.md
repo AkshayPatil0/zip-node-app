@@ -2,15 +2,22 @@
 
 Easily zip your node project excluding `node_modules` and `package-lock.json`.
 
+
 ## Quick Start
 
-Just run following command in directory where your project is located.
-
-`
+Directly run the script using `npx`.
+```
 npx zip-node-app path-to-project
-`
+```
+Or install the `zip-node-app` package globally and run the `zip-node-app` command:
+```
+npm install -g zip-node-app
+zip-node-app path-to-project
+```
 
-The zip file with name `path-to-project-archived.zip` will be created.
+The zip file with name `project-archived.zip` will be created.
+
+
 
 ## Options
 
